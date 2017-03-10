@@ -1,0 +1,25 @@
+{
+  "name": "finderchallenge",
+  "description": "Desafio frontend",
+  "main": "finderchallenge",
+  "authors": [
+    "unt.taller.es@gmail.com"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "challenge"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "^0.6.2",
+    "underscore": "^1.8.3"
+  }
+}
