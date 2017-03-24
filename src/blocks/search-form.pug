@@ -1,2 +1,7 @@
 .search-form
-    h1 search form
+    form.pure-form
+        fieldset 
+            input#message(type='text', placeholder='Buscar...', list='myList')
+            datalist#myList
+            button#buttonSearch.pure-button.pure-button-primary(type='submit') Buscar
+            label Guardar búsqueda
