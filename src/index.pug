@@ -6,24 +6,29 @@ html(lang="es")
         meta(viewport="width=device-width, initial-scale=1.0")
         link(href="https://fonts.googleapis.com/css?family=Proxima+Nova", rel="stylesheet", type="text/css")
         link(href="/vendor/pure/pure-min.css", rel="stylesheet")
+        link(href="/vendor/awesomplete.css", rel="stylesheet")
         link(href="/styles/index.css", rel="stylesheet")
 
     body
         .app.pure-g
             header.pure-u-1
                 .pure-u-1-3
-                    h1.logo Finder challenge!
-                .pure-u-7-24
+                    h1.logo Finder challenge
+                .pure-u-12-24
                     include blocks/search-form
                 .pure-u-1-3
             aside.filters.pure-u-1-4
+                h3 Búsquedas guardadas
+                ul#myListSaved
             content.pure-u-3-4
             footer.pure-u-1
 
         //- third party libraries
+        script(src="/vendor/awesomplete.js")
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")
         script(src="/vendor/underscore/underscore-min.js")
 
         //- app scripts self
-        script(src="/scripts/global.js")
         script(src="/scripts/search-form.js")
+        script(src="/scripts/global.js")
         script(src="/scripts/app.js")
