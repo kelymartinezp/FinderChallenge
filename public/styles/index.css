@@ -1,0 +1,30 @@
+* {
+  font-family: "Proxima Nova";
+}
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.app #myListSaved .pure-menu-item {
+  margin: 5px 0;
+}
+.app #myListSaved .listElementContainer .action {
+  display: none;
+}
+.app #myListSaved .listElementContainer .action span {
+  margin: 0 5px;
+}
+.app #myListSaved .listElementContainer:hover .action {
+  display: block;
+}
+.search-form {
+  margin-top: 18px;
+}
+.search-form a {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 650px) {
+  .search-form {
+    display: none;
+  }
+}
